@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback 8.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <h1>Feedback Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <label for="male"><input type="radio" id="male" name="gender" value="male" required> Male</label>
+                <label for="female"><input type="radio" id="female" name="gender" value="female" required> Female</label>
+                <label for="other"><input type="radio" id="other" name="gender" value="other" required> Other</label>
+            </div>
+
+            <div class="form-group">
+                <label>Hobbies:</label>
+                <label for="reading"><input type="checkbox" id="reading" name="hobbies" value="reading"> Reading</label>
+                <label for="traveling"><input type="checkbox" id="traveling" name="hobbies" value="traveling"> Traveling</label>
+                <label for="sports"><input type="checkbox" id="sports" name="hobbies" value="sports"> Sports</label>
+                <label for="music"><input type="checkbox" id="music" name="hobbies" value="music"> Music</label>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="india">India</option>
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="agree"><input type="checkbox" id="agree" name="agree" required> I agree to the terms and conditions</label>
+            </div>
+
+            <div class="form-buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
